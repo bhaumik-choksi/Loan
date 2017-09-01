@@ -36,7 +36,7 @@ with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
     for (i, o) in zip(inp, op):
         sess.run(optimizer, feed_dict={x:i, y:o})
-    print(sess.run(pred, feed_dict={x:0.5}))
+    print(sess.run(pred, feed_dict={x:7}))
     writer = tf.summary.FileWriter('./my_graph/', sess.graph)
     writer.add_graph(sess.graph)
     writer.close()
