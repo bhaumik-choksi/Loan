@@ -3,6 +3,57 @@ import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
 
+
+def get_data():
+    path = "loan_small.csv"
+
+    def intify_categories(arr):
+        unique_items = list(set(arr))
+        mapping = {}
+        i = 0
+        for unique_item in unique_items:
+            mapping[unique_item] = i
+            i += 1
+
+        output = list(map((lambda x : mapping[x]),arr))
+        return output
+
+    data = pd.read_csv(path, usecols = ['loan_amnt',
+        'term',
+        'int_rate',
+        'installment',
+        'emp_length',
+        'home_ownership',
+        'annual_inc',
+        'verification_status',
+        'purpose',
+        'dti',
+        'delinq_2yrs',
+        'inq_last_6mths',
+        'mths_since_last_delinq',
+        'open_acc',
+        'pub_rec',
+        'revol_bal',
+        'revol_util',
+        'total_acc',
+        'loan_status'
+        ])
+
+    data['term'] = data['term'].apply(lambda x : int(x.replace("months","").strip()))
+    outputs = intify_categories(data['loan_status'])
+    data['emp_length'] = intify_categories(data['emp_length'])
+    data['home_ownership'] = intify_categories(data['home_ownership'])
+    data['verification_status'] = intify_categories(data['verification_status'])
+    data['purpose'] = intify_categories(data['purpose'])
+    del data['loan_status']
+    print(data.dtypes)
+    data = np.asarray(data).reshape(-1, 18)
+    outputs = np.asarray(outputs).reshape(-1, 1)
+    print(data.shape)
+    print(outputs.shape)
+    return data, outputs
+
+
 # Params
 num_features = 18
 num_classes = 1
@@ -28,22 +79,13 @@ biases = {
     'out': tf.Variable(tf.random_normal([num_classes]))
 }
 
-def get_input():
-	path = "loan_small.csv"
-	data = pd.read_csv(path, usecols = ['loan_amnt', 'term', 'int_rate', 'installment', 'emp_length', 
-			'home_ownership', 'annual_inc', 'verification_status', 'purpose', 'dti', 'delinq_2yrs',
-			'inc_last_6mths', 'mths_since_last_delinq', 'open_acc', 'pub_rec', 'revol_bal', 'revol_util'
-			'total_acc'])
-
-    return x,y
-
 
 def neural_net(X):
     with tf.name_scope("Layer_1"):
         # Hidden fully connected layer with 128 neurons
-        layer_1 = tf.add(tf.matmul(X, weights['h1']), biases['b1'])
+        layer_1 = tf.add(tf.matmul(tf.transpose(X), weights['HL1']), biases['b1'])
         # Hidden fully connected layer with 128 neurons
-        layer_2 = tf.add(tf.matmul(layer_1, weights['h2']), biases['b2'])
+        layer_2 = tf.add(tf.matmul(tf.transpose(layer_1), weights['HL2']), biases['b2'])
         # Output fully connected layer
         out_layer = tf.matmul(layer_2, weights['out']) + biases['out']
         return out_layer
@@ -56,6 +98,8 @@ optimizer = tf.train.GradientDescentOptimizer(learning_rate).minimize(cost)
 
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
-    inp, op = get_input()
-    for (i, o) in zip(inp, op):
-        sess.run(optimizer, feed_dict={x:i, y:o})
+    inp, op = get_data()
+    for i,o in zip(inp,op):
+        i = np.asarray(i).reshape(1,len(i))
+        o = np.asarray(0).reshape(1,1)
+        sess.run(optimizer, feed_dict={X: i, Y: o})

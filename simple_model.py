@@ -2,10 +2,11 @@ import tensorflow as tf
 import pandas as pd
 import numpy as np
 
+
 data = pd.read_csv('loan_small.csv')
 amnt = data['loan_amnt']
 status = data['loan_status']
-bad = ["Charged Off","Late (16-30 days)","Default","Late (31-120 days)"]
+bad = ["Charged Off","Late (16-30 days)","Default", "Late (31-120 days)"]
 status = status.apply(lambda x: 0 if x in bad else 1)
 income = data['annual_inc']
 

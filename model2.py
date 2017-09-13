@@ -20,6 +20,7 @@ data = pd.read_csv("loan_small.csv",
                             ])
 
 status = data['loan_status']
+print(set(status))
 bad = ["Charged Off","Late (16-30 days)","Default","Late (31-120 days)"]
 status = status.apply(lambda x: 0 if x in bad else 1)
 
@@ -36,6 +37,6 @@ model = Sequential()
 model.add( Dense(5,input_shape=(None,5),name="input_dense_layer") )
 model.add(Dense(5,name="hidden_dense_layer") )
 model.add(Dense(1,activation="sigmoid",name="output_dense_layer"))
-model.compile(optimizer="rmsprop",loss="mse",metrics=['accuracy'])
-model.fit(in_data,status,callbacks=[K.TensorBoard(log_dir="./my_graph")])
+model.compile(optimizer="adam",loss="mse",metrics=['accuracy'])
+model.fit(in_data,status,callbacks=[K.TensorBoard(log_dir="./my_graph")],epochs=100,batch_size=10)
 model.summary()
