@@ -234,6 +234,6 @@ model.summary()
 # model.save('loan_weights.h5')
 
 scores = model.evaluate(np.array(x_test), np.array(y_test), verbose=0)
-print("====================[TEST SCORE]====================")
+print("TEST SCORE")
 print("%s: %.2f%%" % (model.metrics_names[1], scores[1]*100))
 plot_model(model, "model.png")
