@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36e6ee87-3239-43a5-9eb8-32898565caa0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/german.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/less_features.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/loan_weights.h5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main_model.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model_comparison.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/money_transfer_server.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/secondary_model.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Contract/LendingInterface.py" afterPath="$PROJECT_DIR$/Contract/LendingInterface.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Contract/P2PLending.sol" afterPath="$PROJECT_DIR$/Contract/P2PLending.sol" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sandbox.py" afterPath="$PROJECT_DIR$/sandbox.py" />
     </list>
     <ignored path="Loan.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,137 +35,105 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="model_comparison.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model_comparison.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2720">
-              <caret line="164" column="33" selection-start-line="164" selection-start-column="33" selection-end-line="164" selection-end-column="33" />
-              <folding>
-                <element signature="e#18#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="german.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/german.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="money_transfer_server.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/money_transfer_server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1385">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <marker date="1520327324824" expanded="true" signature="2433:2536" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LendingInterface.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LendingInterface.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Contract/LendingInterface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="366" column="23" selection-start-line="366" selection-start-column="23" selection-end-line="366" selection-end-column="23" />
+            <state relative-caret-position="245">
+              <caret line="285" column="54" selection-start-line="285" selection-start-column="30" selection-end-line="285" selection-end-column="54" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#1854#2346#0" expanded="false" />
-                <element signature="e#2382#2559#0" expanded="false" />
-                <element signature="e#2602#2754#0" expanded="false" />
-                <element signature="e#2800#2962#0" expanded="false" />
-                <element signature="e#3007#3118#0" expanded="false" />
-                <element signature="e#4099#4572#0" expanded="false" />
-                <element signature="e#4671#4894#0" expanded="false" />
-                <element signature="e#5205#5839#0" expanded="false" />
-                <element signature="e#5876#6712#0" expanded="false" />
-                <element signature="e#6959#8961#0" expanded="false" />
-                <marker date="1520519976448" expanded="false" signature="3152:4056" placeholder="..." />
-                <marker date="1520519976448" expanded="false" signature="4924:5038" placeholder="..." />
-                <marker date="1520519976448" expanded="false" signature="5061:5168" placeholder="..." />
-                <marker date="1520519976448" expanded="false" signature="6755:6907" placeholder="..." />
-                <marker date="1520519976448" expanded="false" signature="9013:10430" placeholder="..." />
-                <marker date="1520519976448" expanded="false" signature="10473:10785" placeholder="..." />
-                <marker date="1520519976448" expanded="false" signature="10822:11024" placeholder="..." />
-                <marker date="1520519976448" expanded="false" signature="11054:11702" placeholder="..." />
+                <element signature="e#3045#4060#0" expanded="false" />
+                <element signature="e#4103#4624#0" expanded="false" />
+                <element signature="e#4981#5074#0" expanded="false" />
+                <element signature="e#5102#5188#0" expanded="false" />
+                <element signature="e#5225#5859#0" expanded="false" />
+                <element signature="e#5896#6775#0" expanded="false" />
+                <element signature="e#6823#6970#0" expanded="false" />
+                <element signature="e#7022#9024#0" expanded="false" />
+                <element signature="e#9081#10489#0" expanded="false" />
+                <element signature="e#11860#12051#0" expanded="false" />
+                <element signature="e#12109#12799#0" expanded="false" />
+                <marker date="1520806299928" expanded="false" signature="10946:11148" placeholder="..." />
+                <marker date="1520806299928" expanded="false" signature="11178:11826" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="P2PLending.sol" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Contract/P2PLending.sol">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="241" column="0" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
+            <state relative-caret-position="143">
+              <caret line="632" column="47" selection-start-line="632" selection-start-column="47" selection-end-line="632" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#84#0" expanded="true" />
+                <element signature="e#2303#2896#0" expanded="false" />
+                <element signature="e#2941#3433#0" expanded="false" />
+                <element signature="e#3469#3646#0" expanded="false" />
+                <element signature="e#3689#3825#0" expanded="false" />
+                <element signature="e#3871#4017#0" expanded="false" />
+                <element signature="e#4062#4157#0" expanded="false" />
+                <element signature="e#5934#6157#0" expanded="false" />
+                <element signature="e#6192#6285#0" expanded="false" />
+                <element signature="e#6313#6399#0" expanded="false" />
+                <element signature="e#6436#7070#0" expanded="false" />
+                <element signature="e#7107#7986#0" expanded="false" />
+                <element signature="e#8034#8181#0" expanded="false" />
+                <element signature="e#8233#10235#0" expanded="false" />
+                <element signature="e#10292#11700#0" expanded="false" />
+                <element signature="e#12162#12359#0" expanded="false" />
+                <element signature="e#12394#13037#0" expanded="false" />
+                <element signature="e#13071#13262#0" expanded="false" />
+                <element signature="e#13320#14010#0" expanded="false" />
+                <element signature="e#15388#16557#0" expanded="false" />
+                <element signature="e#16603#16694#0" expanded="false" />
+                <element signature="e#16772#17125#0" expanded="false" />
+                <element signature="e#17224#18150#0" expanded="false" />
+                <element signature="e#18249#18430#0" expanded="false" />
+                <element signature="e#18503#18915#0" expanded="false" />
+                <element signature="e#25283#26212#0" expanded="false" />
+                <marker date="1520807276798" expanded="false" signature="19010:25182" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="appl_dashboard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/appl_dashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="secondary_model.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/secondary_model.py">
+      <file leaf-file-name="repay_loan.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/repay_loan.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2941">
-              <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="84" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_model.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main_model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3927">
-              <caret line="235" column="0" selection-start-line="235" selection-start-column="0" selection-end-line="238" selection-end-column="30" />
-              <folding>
-                <element signature="e#18#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="less_features.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/less_features.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3927">
-              <caret line="235" column="47" selection-start-line="235" selection-start-column="47" selection-end-line="235" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="model2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+            <state relative-caret-position="253">
+              <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sandbox.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sandbox.py">
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="321">
+              <caret line="26" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_app.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/new_app.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="93" column="54" selection-start-line="93" selection-start-column="54" selection-end-line="93" selection-end-column="54" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -189,11 +168,28 @@
         <option value="$PROJECT_DIR$/comparison.py" />
         <option value="$PROJECT_DIR$/lending_club.py" />
         <option value="$PROJECT_DIR$/main_model.py" />
-        <option value="$PROJECT_DIR$/sandbox.py" />
-        <option value="$PROJECT_DIR$/german.py" />
         <option value="$PROJECT_DIR$/money_transfer_server.py" />
+        <option value="$PROJECT_DIR$/NeuralEngine/Preprocessors.py" />
+        <option value="$PROJECT_DIR$/NeuralEngine/preprocessor.py" />
+        <option value="$PROJECT_DIR$/NeuralEngine/predictor.py" />
+        <option value="$PROJECT_DIR$/NeuralEngine/__init__.py" />
+        <option value="$PROJECT_DIR$/german.py" />
+        <option value="$PROJECT_DIR$/NeuralEngine/trainer.py" />
+        <option value="$PROJECT_DIR$/NeuralEngine/Preprocessor.py" />
+        <option value="$PROJECT_DIR$/NeuralEngine/Trainer.py" />
+        <option value="$PROJECT_DIR$/Contract/__init__.py" />
+        <option value="$PROJECT_DIR$/sandbox.py" />
         <option value="$PROJECT_DIR$/Contract/P2PLending.sol" />
+        <option value="$PROJECT_DIR$/P2PLoan/P2PLending.sol" />
+        <option value="$PROJECT_DIR$/P2PLoan/templates/new_app.html" />
+        <option value="$PROJECT_DIR$/P2PLoan/app.py" />
+        <option value="$PROJECT_DIR$/templates/open_apps.html" />
+        <option value="$PROJECT_DIR$/templates/new_app.html" />
+        <option value="$PROJECT_DIR$/NeuralEngine/Predictor.py" />
         <option value="$PROJECT_DIR$/Contract/LendingInterface.py" />
+        <option value="$PROJECT_DIR$/templates/appl_dashboard.html" />
+        <option value="$PROJECT_DIR$/templates/repay_loan.html" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
@@ -257,6 +253,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Loan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Loan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NeuralEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Loan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Loan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Contract" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -278,23 +302,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.LendingInterface">
-    <configuration default="false" name="model_comparison" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Loan" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model_comparison.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="german (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -329,23 +336,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="money_transfer_server" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Loan" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/money_transfer_server.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="LendingInterface" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -359,6 +349,40 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Loan" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Contract/LendingInterface.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Trainer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NeuralEngine" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Loan" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NeuralEngine/Trainer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Predictor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NeuralEngine" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Loan" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NeuralEngine/Predictor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -498,19 +522,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.model_comparison" />
-      <item index="1" class="java.lang.String" itemvalue="Python.german (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.sandbox" />
-      <item index="3" class="java.lang.String" itemvalue="Python.money_transfer_server" />
-      <item index="4" class="java.lang.String" itemvalue="Python.LendingInterface" />
+      <item index="0" class="java.lang.String" itemvalue="Python.german (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.sandbox" />
+      <item index="2" class="java.lang.String" itemvalue="Python.LendingInterface" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Trainer" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Predictor" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.LendingInterface" />
-        <item index="1" class="java.lang.String" itemvalue="Python.money_transfer_server" />
-        <item index="2" class="java.lang.String" itemvalue="Python.german (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.sandbox" />
-        <item index="4" class="java.lang.String" itemvalue="Python.model_comparison" />
+        <item index="1" class="java.lang.String" itemvalue="Python.sandbox" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Predictor" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Trainer" />
+        <item index="4" class="java.lang.String" itemvalue="Python.german (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -532,9 +556,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15997024" sideWeight="0.47921762" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15997024" sideWeight="0.8141809" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33169934" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15997024" sideWeight="0.5097561" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15997024" sideWeight="0.18581907" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15997024" sideWeight="0.8141809" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -542,19 +578,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33169934" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15997024" sideWeight="0.5097561" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15997024" sideWeight="0.5207824" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15997024" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3872549" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15997024" sideWeight="0.18581907" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -571,40 +595,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BigOne/first.py" />
-    <entry file="file://$PROJECT_DIR$/simple_model.py" />
-    <entry file="file://$PROJECT_DIR$/10_features_tf.py" />
-    <entry file="file://$PROJECT_DIR$/model2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/18_features_try2.py" />
-    <entry file="file://$PROJECT_DIR$/BigOne/temp.py" />
-    <entry file="file://$PROJECT_DIR$/keras_18_features.py" />
-    <entry file="file://$PROJECT_DIR$/BigOne/first.py" />
-    <entry file="file://$PROJECT_DIR$/simple_model.py" />
-    <entry file="file://$PROJECT_DIR$/model2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="34" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BigOne/temp.py" />
-    <entry file="file://$PROJECT_DIR$/18_features_try2.py" />
-    <entry file="file://$PROJECT_DIR$/keras_18_features.py" />
-    <entry file="file://$PROJECT_DIR$/BigOne/first.py" />
-    <entry file="file://$PROJECT_DIR$/simple_model.py" />
     <entry file="file://$PROJECT_DIR$/model2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -637,13 +632,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simple_model.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/tensorflow/python/client/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="580" column="21" selection-start-line="580" selection-start-column="21" selection-end-line="580" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Big One/first.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/pandas/io/parsers.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -686,19 +674,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2720">
           <caret line="164" column="33" selection-start-line="164" selection-start-column="33" selection-end-line="164" selection-end-column="33" />
-          <folding>
-            <element signature="e#18#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/german.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -706,19 +682,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2941">
           <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="84" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3927">
-          <caret line="235" column="0" selection-start-line="235" selection-start-column="0" selection-end-line="238" selection-end-column="30" />
-          <folding>
-            <element signature="e#18#37#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -726,9 +690,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3927">
           <caret line="235" column="47" selection-start-line="235" selection-start-column="47" selection-end-line="235" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -740,13 +702,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sandbox.py">
+    <entry file="file://$PROJECT_DIR$/german.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeuralEngine/Preprocessor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -754,45 +722,213 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1385">
           <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/tensorflow/python/client/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="1328" column="25" selection-start-line="1328" selection-start-column="25" selection-end-line="1328" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/sklearn/preprocessing/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="1808" column="0" selection-start-line="1808" selection-start-column="0" selection-end-line="1808" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="221" column="20" selection-start-line="221" selection-start-column="20" selection-end-line="221" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeuralEngine/Trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-962">
+          <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1520327324824" expanded="true" signature="2433:2536" placeholder="..." />
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#339#345#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeuralEngine/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sandbox.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contract/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P2PLoan/P2PLending.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="253" column="1" selection-start-line="253" selection-start-column="1" selection-end-line="253" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Contract/P2PLending.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="241" column="0" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P2PLoan/templates/new_app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="202" column="33" selection-start-line="202" selection-start-column="33" selection-end-line="202" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P2PLoan/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/open_apps.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/new_app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="93" column="54" selection-start-line="93" selection-start-column="54" selection-end-line="93" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeuralEngine/Predictor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" column="9" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Contract/LendingInterface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="366" column="23" selection-start-line="366" selection-start-column="23" selection-end-line="366" selection-end-column="23" />
+        <state relative-caret-position="245">
+          <caret line="285" column="54" selection-start-line="285" selection-start-column="30" selection-end-line="285" selection-end-column="54" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#1854#2346#0" expanded="false" />
-            <element signature="e#2382#2559#0" expanded="false" />
-            <element signature="e#2602#2754#0" expanded="false" />
-            <element signature="e#2800#2962#0" expanded="false" />
-            <element signature="e#3007#3118#0" expanded="false" />
-            <element signature="e#4099#4572#0" expanded="false" />
-            <element signature="e#4671#4894#0" expanded="false" />
-            <element signature="e#5205#5839#0" expanded="false" />
-            <element signature="e#5876#6712#0" expanded="false" />
-            <element signature="e#6959#8961#0" expanded="false" />
-            <marker date="1520519976448" expanded="false" signature="3152:4056" placeholder="..." />
-            <marker date="1520519976448" expanded="false" signature="4924:5038" placeholder="..." />
-            <marker date="1520519976448" expanded="false" signature="5061:5168" placeholder="..." />
-            <marker date="1520519976448" expanded="false" signature="6755:6907" placeholder="..." />
-            <marker date="1520519976448" expanded="false" signature="9013:10430" placeholder="..." />
-            <marker date="1520519976448" expanded="false" signature="10473:10785" placeholder="..." />
-            <marker date="1520519976448" expanded="false" signature="10822:11024" placeholder="..." />
-            <marker date="1520519976448" expanded="false" signature="11054:11702" placeholder="..." />
+            <element signature="e#3045#4060#0" expanded="false" />
+            <element signature="e#4103#4624#0" expanded="false" />
+            <element signature="e#4981#5074#0" expanded="false" />
+            <element signature="e#5102#5188#0" expanded="false" />
+            <element signature="e#5225#5859#0" expanded="false" />
+            <element signature="e#5896#6775#0" expanded="false" />
+            <element signature="e#6823#6970#0" expanded="false" />
+            <element signature="e#7022#9024#0" expanded="false" />
+            <element signature="e#9081#10489#0" expanded="false" />
+            <element signature="e#11860#12051#0" expanded="false" />
+            <element signature="e#12109#12799#0" expanded="false" />
+            <marker date="1520806299928" expanded="false" signature="10946:11148" placeholder="..." />
+            <marker date="1520806299928" expanded="false" signature="11178:11826" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="26" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/appl_dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/repay_loan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="632" column="47" selection-start-line="632" selection-start-column="47" selection-end-line="632" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#84#0" expanded="true" />
+            <element signature="e#2303#2896#0" expanded="false" />
+            <element signature="e#2941#3433#0" expanded="false" />
+            <element signature="e#3469#3646#0" expanded="false" />
+            <element signature="e#3689#3825#0" expanded="false" />
+            <element signature="e#3871#4017#0" expanded="false" />
+            <element signature="e#4062#4157#0" expanded="false" />
+            <element signature="e#5934#6157#0" expanded="false" />
+            <element signature="e#6192#6285#0" expanded="false" />
+            <element signature="e#6313#6399#0" expanded="false" />
+            <element signature="e#6436#7070#0" expanded="false" />
+            <element signature="e#7107#7986#0" expanded="false" />
+            <element signature="e#8034#8181#0" expanded="false" />
+            <element signature="e#8233#10235#0" expanded="false" />
+            <element signature="e#10292#11700#0" expanded="false" />
+            <element signature="e#12162#12359#0" expanded="false" />
+            <element signature="e#12394#13037#0" expanded="false" />
+            <element signature="e#13071#13262#0" expanded="false" />
+            <element signature="e#13320#14010#0" expanded="false" />
+            <element signature="e#15388#16557#0" expanded="false" />
+            <element signature="e#16603#16694#0" expanded="false" />
+            <element signature="e#16772#17125#0" expanded="false" />
+            <element signature="e#17224#18150#0" expanded="false" />
+            <element signature="e#18249#18430#0" expanded="false" />
+            <element signature="e#18503#18915#0" expanded="false" />
+            <element signature="e#25283#26212#0" expanded="false" />
+            <marker date="1520807276798" expanded="false" signature="19010:25182" placeholder="..." />
           </folding>
         </state>
       </provider>

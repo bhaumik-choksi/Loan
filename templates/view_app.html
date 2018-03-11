@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block title %}Applicant Dashboard{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block body %}
+    <header id="header" class="alt">
+	<span class="logo"><a href="{{url_for('main')}}"><img src="../static/res/p2p_logo.png" alt="" /></a></span>
+	</header>
+
+	<div id="wrapper">
+		<div id="main">
+			<section id="content" class="main">
+				<div class="container">
+					<div class="row uniform">
+						<div class="4u 12u$(small)">
+							Name : <span id="name">{{app['name']}}</span>
+						</div>
+						<div class="4u 12u$(small)">
+							Age : <span id="age">{{app['age']}}</span>
+						</div>
+						<div class="4u 12u$(small)">
+							Gender : <span id="gender">{{app['gender']}}</span>
+						</div>
+
+						<div class="4u 12u$(small)">
+							Marriage status : <span id="marr_status">{{app['marr_status']}}</span>
+						</div>
+						<div class="4u 12u$(small)">
+							Job : <span id="job">{{app['job']}}</span>
+						</div>
+						<div class="4u 12u$(small)">
+							Employment since : <span id="emp_since">{{app['emp_since']}}</span>
+						</div>
+
+						<div class="4u 12u$(small)">
+							Housing : <span id="housing">{{app['housing']}}</span>
+						</div>
+						<div class="4u 12u$(small)">
+							Present residence since : <span id="res_since">{{app['res_since']}}</span>
+						</div>
+						<div class="4u 12u$(small)">
+							Property : <span id="property">{{app['_property']}}</span>
+						</div>
+
+						<div class="4u 12u$(small)">
+							Loan amount : <span id="cred_amt">{{app['cred_amt']}}</span>
+						</div>
+						<div class="4u 12u$(small)">
+							Duration : <span id="duration">{{app['duration']}}</span>
+						</div>
+						<div class="4u 12u$(small)">
+							Interest rate : <span id="inst_rate">{{app['inst_rate']}}</span>
+						</div>
+
+						<div class="4u 12u$(small)">
+							Purpose : <span id="purpose">{{app['purpose']}}</span>
+						</div>
+						<div class="4u 12u$(small)">
+							Status of checking account : <span id="status_ca">{{app['status_ca']}}</span>
+						</div>
+						<div class="4u 12u$(small)">
+							Savings account/ bonds : <span id="sav_act">{{app['sav_act']}}</span>
+						</div>
+
+						<div class="4u 12u$(small)">
+							Existing credits at this bank : <span id="exist_cred">{{app['exist_cred']}}</span>
+						</div>
+						<div class="4u 12u$(small)">
+							Other debtors/ guarantors : <span id="debtors">{{app['debtors']}}</span>
+						</div>
+						<div class="4u 12u$(small)">
+							Other installment plans : <span id="plans">{{app['plans']}}</span>
+						</div>
+
+						<div class="4u 12u$(small)">
+							Liable for how many : <span id="liab">{{app['liab']}}</span>
+						</div>
+						<div class="4u 12u$(small)">
+							Telephone : <span id="phone">{{app['phone']}}</span>
+						</div>
+						<div class="4u 12u$(small)">
+							Foreign worker : <span id="foreign">{{app['foreign']}}</span>
+						</div>
+					</div>
+					<footer class="major">
+						<form action="" method="post">
+							<ul class="actions">
+								<input type="submit" name="grant_loan" value="Grant Loan" class="special big icon fa-handshake-o" /></li>
+							</ul>
+						</form>
+					</footer>
+				</div>
+			</section>
+		</div>
+		{% include "footer.html" %}
+	</div>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}

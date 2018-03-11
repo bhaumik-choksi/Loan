@@ -1,0 +1,214 @@
+<form method="post" action="">
+	<h2>Start a new application</h2>
+	<div class="row uniform">
+		<div class="4u 12u$(xsmall)">
+		<input type="text" name="name" id="name" value="{{request.form.name}}" placeholder="Name" required />
+		<label for="name">Name</label>
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<input type="number" name="age" id="age" value="{{request.form.age}}" placeholder="Age" required />
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<div class="select-wrapper">
+			<select name="job" id="job" required>
+				<option value="">Job</option>
+				<option value="A171">Unemployed/ Unskilled - non-resident</option>
+				<option value="A172">Unskilled - resident</option>
+				<option value="A173">Skilled employee / Official</option>
+				<option value="A174">Management</option>
+				<option value="A174">Self-employed</option>
+				<option value="A174">Highly qualified employee</option>
+				<option value="A174">Officer</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="2u 12u$(small)">
+		<input type="radio" id="male" name="gender" value="0" checked>
+		<label for="male">Male</label>
+	</div>
+	<div class="2u 12u$(small)">
+		<input type="radio" id="female" value="1" name="gender">
+		<label for="female">Female</label>
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<div class="select-wrapper">
+			<select name="marr_status" id="marr_status" required>
+				<option value="">Marriage Status</option>
+				<option value="1">Married</option>
+				<option value="2">Single</option>
+				<option value="3">Divorced/ Separated</option>
+				<option value="4">Widowed</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<input type="number" name="liab" id="liab" value="{{request.form.liab}}" placeholder="Liable for how many" required />
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<div class="select-wrapper">
+			<select name="housing" id="housing" required>
+				<option value="">Housing</option>
+				<option value="A151">Rent</option>
+				<option value="A152">Own</option>
+				<option value="A153">For free</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<input type="number" name="res_since" id="res_since" value="{{request.form.res_since}}" placeholder="Present residence since" required />
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<div class="select-wrapper">
+			<select name="status_ca" id="status_ca" required>
+				<option value="">Status of checking account</option>
+				<option value="A11">Less than 0</option>
+				<option value="A12">Between 0 and 200</option>
+				<option value="A13">More than 200</option>
+				<option value="A14">No checking account</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<input type="number" name="duration" id="duration" value="{{request.form.duration}}" placeholder="Duration (in months)" required />
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<div class="select-wrapper">
+			<select name="purpose" id="purpose" required>
+				<option value="">Purpose</option>
+				<option value="A40">Car (new)</option>
+				<option value="A41">Car (used)</option>
+				<option value="A42">Furniture/ Equipment</option>
+				<option value="A43">Radio/ Television</option>
+				<option value="A44">Domestic appliances</option>
+				<option value="A45">Repairs</option>
+				<option value="A46">Education</option>
+				<option value="A48">Retraining</option>
+				<option value="A49">Business</option>
+				<option value="A410">Others</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<input type="number" name="cred_amt" id="cred_amt" value="{{request.form.cred_amt}}" placeholder="Credit amount" required />
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<div class="select-wrapper">
+			<select name="sav_act" id="sav_act" required>
+				<option value="">Savings account/ bonds</option>
+				<option value="A61">Less than 100</option>
+				<option value="A62">Between 100 and 500</option>
+				<option value="A63">Between 500 and 1000</option>
+				<option value="A64">More than 1000</option>
+				<option value="A65">Unknown/ No savings account</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<div class="select-wrapper">
+			<select name="emp_since" id="emp_since" required>
+				<option value="">Present employment since</option>		
+				<option value="A71">Unemployed</option>
+				<option value="A72">Less than 1 year</option>
+				<option value="A73">Between 1 and 4 years</option>
+				<option value="A74">Between 4 and 7 years</option>
+				<option value="A75">More than 7 years</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<input type="number" name="inst_rate" id="inst_rate" value="{{request.form.inst_rate}}" placeholder="Installment rate" required />
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<div class="select-wrapper">
+			<select name="debtors" id="debtors" required>
+				<option value="">Other debtors/ guarantors</option>
+				<option value="A101">None</option>
+				<option value="A102">Co-applicant</option>
+				<option value="A103">Guarantor</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<div class="select-wrapper">
+			<select name="property" id="property" required>
+				<option value="">Property</option>
+				<option value="A121">Real estate</option>
+				<option value="A122">Life Insurance</option>
+				<option value="A123">Car or other</option>
+				<option value="A124">Unknown/ No property</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<div class="select-wrapper">
+			<select name="plans" id="plans" required>
+				<option value="">Other installment plans</option>
+				<option value="A141">Bank</option>
+				<option value="A142">Stores</option>
+				<option value="A143">None</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<input type="number" name="exist_cred" id="exist_cred" value="{{request.form.exist_cred}}" placeholder="Existing credits here" required />
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<div class="select-wrapper">
+			<select name="phone" id="phone" required>
+				<option value="">Telephone</option>
+				<option value="A191">Yes, under my name</option>
+				<option value="A192">No</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<div class="select-wrapper">
+			<select name="foreign" id="foreign" required>
+				<option value="">Foreign worker</option>
+				<option value="A201">Yes</option>
+				<option value="A202">No</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="4u 12u$(xsmall)">
+		<div class="select-wrapper">
+			<select name="history" id="history" required>
+				<option value="">Credit history</option>
+				<option value="A30">No credits taken</option>
+				<option value="A31">All credits paid back duly</option>
+				<option value="A32">Existing credits paid back duly till now</option>
+				<option value="A33">Delay in paying off in the past</option>
+				<option value="A34">Critical account</option>
+			</select>
+		</div>
+	</div>
+
+	<footer class="major">
+		<ul class="actions">
+			<li><input type="submit" name="submit" value="Submit" class="special" /></li>
+		</ul>
+	</footer>
+
+	</div>
+</form>

@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block title %}Sign Up / Login{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block body %}
+    <header id="header" class="alt">
+	<span class="logo"><a href="{{url_for('main')}}"><img src="../static/res/p2p_logo.png" alt="" /></a></span>
+	</header>
+
+	<div id='wrapper'> 
+
+		<!-- Main -->
+		<div id="main">
+
+			<section id="content" class="main">
+
+				<!-- Sign Up -->
+				<section>
+						<div class="row">
+							<div class="6u 12u$(medium)">
+								<div class="table-wrapper">
+									<table class="alt">
+										<tbody>
+											<tr>
+												<td>
+													<h2>Sign Up</h2>
+													<form method="post" action="">
+														<div class="row uniform">
+															<div class="11u$">
+																<input class="trial" type="text" name="su_name" id="su_name" value="{{request.form.su_name}}" placeholder="Name" required />
+															</div>
+															<div class="11u$">
+																<input type="password" name="su_password" id="su_pass" value="{{request.form.su_password}}" placeholder="Password" required />
+															</div>
+															<div class="6u 12u$(small)">
+															<input type="radio" id="is_invest" name="client_type" value="False" checked>
+															<label for="is_invest">Investor</label>
+															</div>
+															<div class="6u 12u$(small)">
+																<input type="radio" id="is_applic" name="client_type" value="True">
+																<label for="is_applic">Loan Applicant</label>
+															</div>
+
+															<footer class="major">
+																<ul class="actions">
+																	<li><input type="submit" name="btn" value="Sign Up" class="special" /></li>
+																</ul>
+															</footer>
+														</div>
+													</form>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="6u$ 12u$(medium)">
+								<div class="table-wrapper">
+									<table class="alt">
+										<tbody>
+											<tr>
+												<td>
+													<h2>Login</h2>
+													{% if account_address %}
+														<div>Your public key is : {{account_address}}</div>
+														<p>Please save this key for future login</p>
+													{% endif %}
+													<form method="post" action="">
+														<div class="row uniform">
+															<div class="11u$">
+																<input type="text" name="l_acc_add" id="l_acc_add" value="{{request.form.acc_add}}" placeholder="Public key" />
+															</div>
+															<div class="11u$">
+																<input type="password" name="l_password" id="l_pass" value="{{request.form.l_password}}" placeholder="Password" />
+																<span class="help-block" style="color: red;">{{error_l_pass}}</span>
+															</div>
+
+															<footer class="major">
+																<ul class="actions">
+																	<li><input type="submit" name="btn" value="Login" class="special" /></li>
+																</ul>
+															</footer>
+														</div>
+													</form>
+												<td>
+											</tr> 
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</section>
+				</section>
+			</div>
+		{% include 'footer.html' %}
+	</div>
+{% endblock %}
+

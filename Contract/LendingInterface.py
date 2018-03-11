@@ -13,7 +13,7 @@ compiled_sol = compile_source(src)
 contract_interface = compiled_sol['<stdin>:P2PLending']
 
 P2PLending_contract = w3provider.eth.contract(abi=contract_interface['abi'], bytecode=contract_interface['bin'])
-tx_hash = P2PLending_contract.deploy(transaction={'from': w3provider.eth.accounts[0], 'gas': 4100000})
+tx_hash = P2PLending_contract.deploy(transaction={'from': w3provider.eth.accounts[0]})
 tx_receipt = w3provider.eth.getTransactionReceipt(tx_hash)
 
 contract_address = tx_receipt['contractAddress']
@@ -31,15 +31,15 @@ def create_account(password, name, borrower):
 
     # Give some ether to fund gas for txns
     w3provider.eth.sendTransaction(
-        {'from': w3provider.eth.accounts[0], 'to': account_address, 'gas': 4100000, 'value': 50000000})
+        {'from': w3provider.eth.accounts[0], 'to': account_address, 'value': 50000000})
 
     # Unlock for 3 seconds to run the create<User> Txns
     w3provider.personal.unlockAccount(account_address, password, 3)
 
     if borrower == "True":
-        contract_txn_interface.transact({'from': account_address, 'gas': 4100000}).createBorrower(name)
+        contract_txn_interface.transact({'from': account_address}).createBorrower(name)
     else:
-        contract_txn_interface.transact({'from': account_address, 'gas': 4100000}).createInvestor(name)
+        contract_txn_interface.transact({'from': account_address}).createInvestor(name)
 
     return account_address
 
@@ -71,19 +71,19 @@ def logout(account_address):
 
 def check_balance(account_address):
     # TODO: On login, save account_address to global, maybe?
-    return contract_txn_interface.call({'from': account_address, 'gas': 4100000}).viewBalance()
+    return contract_txn_interface.call({'from': account_address}).viewBalance()
 
 
 def withdraw(account_address, amount):
     try:
-        contract_txn_interface.transact({'from': account_address, 'gas': 4100000}).withdraw(int(amount))
+        contract_txn_interface.transact({'from': account_address}).withdraw(int(amount))
         return True
     except:
         return False
 
 
 def deposit(account_address, amount):
-    contract_txn_interface.transact({'from': account_address, 'gas': 4100000}).deposit(int(amount))
+    contract_txn_interface.transact({'from': account_address}).deposit(int(amount))
     return True
 
 
@@ -109,8 +109,12 @@ def squishify(*args, **kwargs):
     exist_cred = kwargs['exist_cred']
     phone = kwargs['phone']
     foreign = kwargs['foreign']
+    category = kwargs['category']
+    confidence = kwargs['confidence']
+
     return "~".join([name, age, job, gender, marr_status, liab, housing, res_since, status_ca, duration, purpose,
-                     cred_amt, sav_act, emp_since, inst_rate, debtors, _property, plans, exist_cred, phone, foreign])
+                     cred_amt, sav_act, emp_since, inst_rate, debtors, _property, plans, exist_cred, phone, foreign,
+                     category, confidence])
 
 
 def desquishify(compressed_string):
@@ -122,7 +126,8 @@ def desquishify(compressed_string):
         'duration': s[9], 'purpose': s[10], 'cred_amt': s[11],
         'sav_act': s[12], 'emp_since': s[13], 'inst_rate': [14],
         'debtors': s[15], '_property': s[16], 'plans': s[17],
-        'exist_cred': s[18], 'phone': s[19], 'foreign': s[20]
+        'exist_cred': s[18], 'phone': s[19], 'foreign': s[20],
+        'category': s[21], 'confidence': s[22]
     }
 
 
@@ -136,11 +141,11 @@ def create_application(account_address, duration, interest_rate, credit_amount, 
 
 
 def get_num_applications():
-    return contract_txn_interface.call({'from': w3provider.eth.accounts[0], 'gas': 4100000}).getNumApplications()
+    return contract_txn_interface.call({'from': w3provider.eth.accounts[0]}).getNumApplications()
 
 
 def get_num_loans():
-    return contract_txn_interface.call({'from': w3provider.eth.accounts[0], 'gas': 4100000}).getNumLoans()
+    return contract_txn_interface.call({'from': w3provider.eth.accounts[0]}).getNumLoans()
 
 
 def view_open_applications():
@@ -179,8 +184,8 @@ def view_open_applications():
                 'purpose': other_data['purpose'],
                 'job': other_data['job'],
                 'age': other_data['age'],
-                'category': 2,
-                'confidence': 95,
+                'category': other_data['category'],
+                'confidence': other_data['confidence'],
                 'borrower': raw_data[2]
             })
     return open_applications
@@ -268,19 +273,22 @@ def estimate_interest(account_address, userType):
             print(time_elapsed, "Time elapsed")
 
             if t_since_last_payment != 0:
-                amount_with_interest = p * (1 + r / (100 * n)) ** (n * time_elapsed / 12)
+                amount_with_interest = p * (1 + r / (100 * n)) ** (time_elapsed)
                 amount_with_interest = int(amount_with_interest)
                 return [int(amount_with_interest), int(t_since_last_payment)]
             else:
-                return [0, 0]
+                return [int(p), 0]
 
 
 def repay_loan(account_address, amount):
-    amount_with_interest, months_since_last_checkpoint = estimate_interest(account_address, 'borrower')
-    amount = int(amount)  # Typecast for safety
-    contract_txn_interface.transact({'from': account_address}) \
-        .repayLoan(amount, amount_with_interest, months_since_last_checkpoint)
-    return True
+    try:
+        amount_with_interest, months_since_last_checkpoint = estimate_interest(account_address, 'borrower')
+        amount = int(amount)  # Typecast for safety B|
+        contract_txn_interface.transact({'from': account_address}) \
+            .repayLoan(amount, amount_with_interest, months_since_last_checkpoint)
+        return True
+    except:
+        return False
 
 
 def view_application_by_id(index):
@@ -326,20 +334,26 @@ def get_full_blockchain():
 def view_my_txns_from_blockchain(account_address):
     n = w3provider.eth.blockNumber
     print(n, "Blocks in the blockchain")
-    output = {}
+    output = []
     for block_num in range(n):
-        output[block_num] = []
         txn_count = w3provider.eth.getBlockTransactionCount(block_num)
         for i in range(txn_count):
-                output[block_num].append(w3provider.eth.getTransactionFromBlock(block_num, i))
+            raw_data = dict(w3provider.eth.getTransactionFromBlock(block_num, i))
+            if raw_data['from'].lower() == account_address.lower() or raw_data['to'].lower() == account_address.lower():
+                output.append({
+                    'from': raw_data['from'],
+                    'to': raw_data['to'],
+                    'blockNumber': raw_data['blockNumber'],
+                    'hash': raw_data['hash']
+                })
 
     return output
 
 
 # Tester code below
-bor = create_account("foo", "foo", "True")
-login(bor, "foo")
-print("Creating application", create_application(bor, 24, 5, 100, 'x'))
+# bor = create_account("foo", "foo", "True")
+# login(bor, "foo")
+# print("Creating application", create_application(bor, 24, 5, 100, 'x'))
 # print(deposit(bor, 5000), "Deposit")
 #
 # inv = create_account("bar", "bar", "False")
@@ -359,10 +373,14 @@ print("Creating application", create_application(bor, 24, 5, 100, 'x'))
 # print(repay_loan(bor, amount_with_interest))
 # print(view_my_loan(inv, "investor"))
 
-# op = view_my_txns_from_blockchain(bor)
-# for k,v  in op.items():
-#     print(k,v)
+from NeuralEngine import Trainer, Predictor
 
-keyss = list(k for k in w3provider.eth.getBlock(2))
-print("\n".join(keyss))
-print(keyss)
+# T = Trainer()
+# T.train_all_and_save(filename="german.xlsx", epochs=30, batch_size=5)
+P = Predictor()
+op = P.predict(status_of_account="A11", duration="6", history="A34", purpose="A43", amount="1169", saving_bonds="A65",
+               employment="A75", rate="4",
+               status_sex="A93", other_coap="A101", resi_since="4", property="A121", age="67", other_plans="A143",
+               housing="A152",
+               existing_credits="2", job="A173", liability="1", telephone="A192", foreign="A201")
+print(op)

@@ -1,0 +1,20 @@
+{% if loan == '' %}
+	<p>You have no loans.</p>
+	
+{% else %}
+	<div class="row uniform">
+		<div class="4u 12u$(small)">
+			Principal amount : <span id="p_amt">{{loan['original_amount']}}</span>
+		</div>
+		<div class="4u 12u$(small)">
+			Interest rate : <span id="int_rate">{{loan['interest_rate']}}</span>
+		</div>
+		<div class="4u 12u$(small)">
+			Duration : <span id="duration">{{loan['duration']}}</span>
+		</div>
+
+		<div class="4u 12u$(small)">
+			Amount paid : <span id="marr_status">{{loan['paid_amount']}}</span>
+		</div>
+	</div>
+{% endif %}

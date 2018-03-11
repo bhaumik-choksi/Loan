@@ -1,0 +1,19 @@
+<form action="" method="post">
+	<div class="row uniform">
+		<div class="6u 12u$(small)">
+			<p>Your amount with interest is &#8377;{{amount_with_interest}}</p>
+            <br>
+            <p>The time since your last payment is {{t_since_last_pay}}</p>
+		 </div>
+	</div>
+	<br>
+	<div class="row uniform">
+		<div class="4u 12u$(small)" style="float: left;">
+			<input type="number" name="amount" id="amount" value="{{request.form.amount}}" placeholder="Repay amount" />
+			<span class="help-block" style="color: red;">{{msg}}</span>
+		</div>
+		<div class="4u 12u$(small)" style="float: left;">
+		 	<input type="submit" name="transactBtn" value="Repay" class="special" /></li>
+		</div>
+	</div>
+</form>

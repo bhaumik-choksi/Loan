@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}Investor Dashboard{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block body %}
+  <header id="header" class="alt">
+	<span class="logo"><a href="{{url_for('main')}}"><img src="../../static/res/p2p_logo.png" alt="" /></a></span>
+	</header>
+
+	<div id="wrapper">
+
+	<!-- Nav -->
+	<nav id="nav" class="nav nav-pills justify-content-center">
+		<ul id="myTab">
+			<li class="nav-item"><a style="color: #636363" class="nav-link" id="profile" href="{{url_for('inv_dashboard_profile')}}">Profile</a></li>
+			<li class="nav-item"><a style="color: #636363" class="nav-link" id="my_loan" href="{{url_for('inv_dashboard_my_loan')}}">My Investments</a></li>
+			<li class="nav-item"><a style="color: #636363" class="nav-link" id="open_apps" href="{{url_for('inv_dashboard_open_apps')}}">Open Applications</a></li>
+			<li class="nav-item"><a style="color: #636363" class="nav-link" id="logout" href="{{url_for('signout')}}">Logout</a></li>
+		</ul>
+	</nav>
+
+		<div id="main">
+			<section id="content" class="main">
+				<div class="container">
+
+					{% if tab == 'profile' %}
+						{% include "profile.html" %}
+
+					{% elif tab == 'open_apps' %}
+						{% include "open_apps.html" %}
+
+					{% elif tab == 'my_loan' %}
+						{% include "my_loan.html" %}
+
+					{% endif %}
+				</div>
+			</section>
+		</div>
+		{% include "footer.html" %}
+	</div>
+{% endblock %}
+
+{% block footer %}
+	{% if tab == 'profile' %}
+		<script type="text/javascript">
+	    $('#profile').addClass('active')
+	  </script>
+
+	  {% elif tab == 'open_apps' %}
+		<script type="text/javascript">
+	    $('#open_apps').addClass('active')
+	  </script>
+
+	  {% elif tab == 'my_loan' %}
+		<script type="text/javascript">
+	    $('#my_loan').addClass('active')
+	  </script>
+
+	{% endif %}
+{% endblock %}

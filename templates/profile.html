@@ -1,0 +1,27 @@
+<form action="" method="post">
+	<div class="row uniform">
+		<div class="6u 12u$(small)">
+			<p>Your current balance is &#8377;{{balance}}</p>
+		 </div>
+	</div>
+	<br>
+	<div class="row uniform">
+		<div class="4u 12u$(small)" style="float: left;">
+			<input type="number" name="deposit_amt" id="deposit_amt" value="{{request.form.deposit_amt}}" placeholder="Deposit" />
+			<span class="help-block" style="color: red;">{{deposit_msg}}</span>
+		</div>
+		<div class="4u 12u$(small)" style="float: left;">
+		 	<input type="submit" name="transactBtn" value="Deposit" class="special" /></li>
+		</div>
+	</div>
+	<br>
+	<div class="row uniform">
+		<div class="4u 12u$(small)" style="float: left;">
+			<input type="number" name="withdraw_amt" id="withdraw_amt" value="{{request.form.withdraw_amt}}" placeholder="Withdraw" />
+			<span class="help-block" style="color: red;">{{withdraw_msg}}</span>
+		 </div>
+		 <div class="4u 12u$(small)" style="float: left;">
+		 	<input type="submit" name="transactBtn" value="Withdraw" class="special" /></li>
+		</div>
+	</div>
+</form>

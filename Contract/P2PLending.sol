@@ -4,14 +4,14 @@ contract P2PLending {
     // Global Variables
     mapping (address => uint) balances; // Either investor or borrower => balance
 
-    mapping (address => Investor) investors; // Investor public key => Investor
-    mapping (address => Borrower) borrowers; // Borrower public key => Borrower
+    mapping (address => Investor) public investors; // Investor public key => Investor
+    mapping (address => Borrower) public borrowers; // Borrower public key => Borrower
     // address[] investorArray;
     // address[] borrowerArray;
 
     //Global counters, always increment
-    uint public numApplications;
-    uint public numLoans;
+    uint numApplications;
+    uint numLoans;
 
     mapping (uint => LoanApplication) public applications;
     mapping (uint => Loan) public loans;
@@ -145,9 +145,11 @@ contract P2PLending {
 
 
     }
-
     function repayLoan(uint amount, uint estimatedInterest, uint timeSinceLastPayment){
+        //First check if the payer has enough money
         require(balances[msg.sender] >= amount);
+
+        //Find the loan
         uint id_ = 0;
         for(uint i=1; i<=numLoans; i++)
         {
@@ -158,46 +160,47 @@ contract P2PLending {
                 }
         }
         Loan loan = loans[id_];
+        //Loan found
+
+        //Require that a loan is ongoing
         require(loan.openLoan == true);
 
+        //Get some params fromt the loan
         uint p = loan.principal_amount;
         uint r = loan.interest_rate;
         uint checkpoint = loan.monthlyCheckpoint;
-        uint n = 12;
-
-        uint amountWithInterest;
-        uint interest;
+        uint n = 12; //Number of times loan is compounded annually
 
 
-        // uint timeElapsedInMonths = (now - loan.startTime)/(3600*24*30);
-        // uint t = timeElapsedInMonths - checkpoint;
+        uint amountWithInterest = estimatedInterest;
+
+        //Get just the interest for that month
+        uint interest = amountWithInterest - p;
         uint t = timeSinceLastPayment;
-        if (t!=0)
+
+        //Payable Amount should not exceed the amountWithInterest
+        require(amountWithInterest>=amount);
+
+        //Payable amount should be at least equal to monthly interest
+        require(amount>=interest);
+
+        // Update balance for interest first
+        balances[msg.sender] -= interest;
+        balances[loan.investor] += interest;
+
+        amount -= interest;
+        loan.monthlyCheckpoint += timeSinceLastPayment;
+        loan.amount_paid += interest;
+
+        // Extra payment after interest is paid
+        if(amount>0)
         {
-            amountWithInterest = estimatedInterest;
-            interest = amountWithInterest - p;
-            loan.monthlyCheckpoint += t;
+            loan.principal_amount -= amount;
+            loan.amount_paid += amount;
+
+            balances[msg.sender] -= amount;
+            balances[loan.investor] += amount;
         }
-        else
-        {
-            amountWithInterest = p;
-        }
-
-
-        // Check if amount is greater than monthly installment
-        require(interest <=  amount);
-
-        // Update balances
-        balances[msg.sender] -= amount;
-        balances[loan.investor] += amount;
-
-        // Add amount to total amount paid
-        loan.amount_paid += amount;
-
-
-        require(loan.principal_amount >= amount);
-        loan.principal_amount = amountWithInterest - amount;
-        loan.principal_amount -= amount;
 
         if(loan.principal_amount == 0)
         {
@@ -205,8 +208,8 @@ contract P2PLending {
             hasOngoingLoan[msg.sender] = false;
             hasOngoingApplication[msg.sender] = false;
             hasOngoingApplication[loan.investor] = false;
+            hasOngoingLoan[loan.investor] = false;
         }
-        //bhaumik
     }
     function ifApplicationOpen(uint index) returns (bool){
         LoanApplication app = applications[index];
@@ -242,33 +245,6 @@ contract P2PLending {
 
         return (numericalData, loans[index].borrower, loans[index].investor);
         // numericalData format = [index, interestrate, duration, p_amnt, o_amnt, paid_amnt, starttime, app_index]
-    }
-    function estimateInterest(uint index) returns (uint){
-        uint id_ = 0;
-        for(uint i=1; i<=numLoans; i++)
-        {
-                if(loans[i].borrower == msg.sender)
-                {
-                    id_ = i;
-                    break;
-                }
-        }
-        Loan loan = loans[id_];
-        require(loan.openLoan == true);
-
-        uint p = loan.principal_amount;
-        uint r = loan.interest_rate;
-        uint checkpoint = loan.monthlyCheckpoint;
-        uint n = 12;
-        uint amountWithInterest = p;
-
-        uint timeElapsedInMonths = (now - loan.startTime)/(3600*24*30);
-        uint t = timeElapsedInMonths - checkpoint;
-        if (t!=0)
-        {
-            amountWithInterest = p * (1 + r/(100*n))**(n*t/12);
-        }
-        return (amountWithInterest);
     }
     function getNumApplications() returns (uint) { return numApplications;}
     function getNumLoans() returns (uint) { return numLoans;}

@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block title %}P2P Lending{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block body %}
+	<div id='wrapper'> 
+
+    <header id="header" class="alt">
+	<span class="logo"><img src="../static/res/p2p_logo.png" alt="" /></span>
+	<p>Effortless peer-to-peer lending from the comfort of your own home</p>
+	</header>
+
+    <!-- Nav -->
+		<nav id="nav">
+			<ul>
+				<li><a style="text-decoration: none" href="#intro" class="active">Introduction</a></li>
+				<li><a style="text-decoration: none" href="#first">Investors</a></li>
+				<li><a style="text-decoration: none" href="#second">Loan Applicants</a></li>
+			</ul>
+		</nav>
+
+	<!-- Main -->
+		<div id="main">
+
+			<!-- Introduction -->
+				<section id="intro" class="main">
+					<div class="spotlight">
+						<div class="content">
+							<header class="major">
+								<h2>What we do</h2>
+							</header>
+							<p>We provide a platform for investors to directly get in touch with loan applicants,
+								sanction loans and receive monthly payments. Our neural networks determine the credit worthiness of applicants, making it that much easier and safer to give and get loans.</p>
+						</div>
+						<span class="image"><img src="../static/res/p2p_whatwedo.jpg" alt="" /></span>
+					</div>
+				</section>
+
+			<!-- First Section -->
+				<section id="first" class="main special">
+					<header class="major">
+						<h2>Investors</h2>
+					</header>
+					<div class="spotlight">
+						<ul class="features">
+							<li>
+								<span class="icon major style1 fa-file-text"></span>
+								<h3>Review Applications</h3>
+								<p>Browse open applications presented with a risk analysis to choose one that most appeals to you.</p>
+							</li>
+							<li>
+								<span class="icon major style3 fa-handshake-o"></span>
+								<h3>Select an Application</h3>
+								<p>Pick the application of your choice and get in touch with the person behind the statistics.</p>
+							</li>
+							<li>
+								<span class="icon major style5 fa-credit-card"></span>
+								<h3>Manage Payments</h3>
+								<p>All things money, from the initial loan transfer to monthly loan payments, can be easily managed right here.</p>
+							</li>
+						</ul>
+				    </div>
+					<footer class="major">
+						<ul class="actions">
+							<li><a href="{{url_for('signup')}}" style="text-decoration: none" class="button special">Sign Up / Login</a></li>
+						</ul>
+					</footer>
+				</section>
+
+			<!-- Second Section -->
+				<section id="second" class="main special">
+					<header class="major">
+						<h2>Loan Applicants</h2>	
+					</header>
+
+					<div class="spotlight">
+						<ul class="features">
+							<li>
+								<span class="icon major style1 fa-info"></span>
+								<h3>Enter Information</h3>
+								<p>Enter details about your loan application and have them run through a neural network to give your application a risk score.</p>
+							</li>
+							<li>
+								<span class="icon major style3 fa-handshake-o"></span>
+								<h3>Application Chosen</h3>
+								<p>When your application gets selected, you're put in touch with your new investor.</p>
+							</li>
+							<li>
+								<span class="icon major style5 fa-credit-card"></span>
+								<h3>Manage Payments</h3>
+								<p>All things money, from the initial loan transfer to monthly loan payments, can be easily managed right here.</p>
+							</li>
+						</ul>
+				    </div>
+					
+					<footer class="major">
+						<ul class="actions">
+							<li><a href="{{url_for('signup')}}" style="text-decoration: none" class="button special">Sign Up / Login</a></li>
+						</ul>
+					</footer>
+				</section>
+
+		</div>
+		{% include 'footer.html' %}
+	</div>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% for i in range(ndecks) %}
+   <div class="card-deck mb-3 text-center">
+     {% for app in apps[i*3 : i*3+3] %}
+				<div class="card mb-4 box-shadow">
+					{% if app['category'] == 'risky' %}
+						<div class="card-header" style="background-color: #F1948A">
+							<h4 class="my-0 font-weight-normal">{{app['confidence']}}%</h4>
+	          </div>
+										{% else %}
+						<div class="card-header" style="background-color: #ABEBC6">
+							<h4 class="my-0 font-weight-normal">{{app['confidence']}}%</h4>
+	          </div>
+					{% endif %}
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">&#8377; {{app['amount']}}</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>{{app['name']}}</li>
+              <li>{{app['purpose']}}</li>
+              <li>{{app['age']}} years old</li>
+              <li>{{app['job']}}</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block button special">
+            	<a href="{{url_for('view_app', app_id = app['application_id'])}}" class="button special" style="text-decoration:none">View Application</a>
+            </button>
+          </div>
+	      </div>
+			{% endfor %}
+
+			{% if i == (ndecks-1) %}
+      	{% for i in range(to_hide) %}
+      		
+					<div class="card mb-4 box-shadow hidden-xs-up" style="opacity: 0">
+						<div class="card-header" style="background-color: #ABEBC6">
+							<h4 class="my-0 font-weight-normal">nope</h4>
+	          </div>
+	          <div class="card-body">
+	            <h1 class="card-title pricing-card-title">&#8377; no</h1>
+	            <ul class="list-unstyled mt-3 mb-4">
+	              <li>more</li>
+	              <li>shit</li>
+	              <li>for</li>
+	              <li>you</li>
+	            </ul>
+	          </div>
+		      </div>
+		    	
+				{% endfor %}
+      {% endif %}
+   </div>
+{% endfor %}
