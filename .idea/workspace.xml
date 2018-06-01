@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36e6ee87-3239-43a5-9eb8-32898565caa0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/german.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/less_features.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loan_weights.h5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main_model.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model_comparison.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money_transfer_server.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/secondary_model.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/encoder.p" afterPath="$PROJECT_DIR$/Models/encoder.p" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/model_1.h5" afterPath="$PROJECT_DIR$/Models/model_1.h5" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/model_2.h5" afterPath="$PROJECT_DIR$/Models/model_2.h5" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/model_3.h5" afterPath="$PROJECT_DIR$/Models/model_3.h5" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/normalizer.p" afterPath="$PROJECT_DIR$/Models/normalizer.p" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Contract/LendingInterface.py" afterPath="$PROJECT_DIR$/Contract/LendingInterface.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Contract/P2PLending.sol" afterPath="$PROJECT_DIR$/Contract/P2PLending.sol" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sandbox.py" afterPath="$PROJECT_DIR$/sandbox.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NeuralEngine/Trainer.py" afterPath="$PROJECT_DIR$/NeuralEngine/Trainer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="Loan.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,8 +34,8 @@
       <file leaf-file-name="LendingInterface.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Contract/LendingInterface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="285" column="54" selection-start-line="285" selection-start-column="30" selection-end-line="285" selection-end-column="54" />
+            <state relative-caret-position="2822">
+              <caret line="370" column="1" selection-start-line="370" selection-start-column="1" selection-end-line="370" selection-end-column="1" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
                 <element signature="e#3045#4060#0" expanded="false" />
@@ -51,20 +47,30 @@
                 <element signature="e#6823#6970#0" expanded="false" />
                 <element signature="e#7022#9024#0" expanded="false" />
                 <element signature="e#9081#10489#0" expanded="false" />
+                <element signature="e#10951#11148#0" expanded="false" />
+                <element signature="e#11183#11826#0" expanded="false" />
                 <element signature="e#11860#12051#0" expanded="false" />
                 <element signature="e#12109#12799#0" expanded="false" />
-                <marker date="1520806299928" expanded="false" signature="10946:11148" placeholder="..." />
-                <marker date="1520806299928" expanded="false" signature="11178:11826" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="P2PLending.sol" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Contract/P2PLending.sol">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1105">
+              <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="632" column="47" selection-start-line="632" selection-start-column="47" selection-end-line="632" selection-end-column="47" />
+            <state relative-caret-position="1802">
+              <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
               <folding>
                 <element signature="e#0#84#0" expanded="true" />
                 <element signature="e#2303#2896#0" expanded="false" />
@@ -91,49 +97,34 @@
                 <element signature="e#17224#18150#0" expanded="false" />
                 <element signature="e#18249#18430#0" expanded="false" />
                 <element signature="e#18503#18915#0" expanded="false" />
+                <element signature="e#19015#25182#0" expanded="false" />
                 <element signature="e#25283#26212#0" expanded="false" />
-                <marker date="1520807276798" expanded="false" signature="19010:25182" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="appl_dashboard.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/appl_dashboard.html">
+      <file leaf-file-name="Trainer.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NeuralEngine/Trainer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
-              <folding />
+            <state relative-caret-position="153">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#401#407#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="repay_loan.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/repay_loan.html">
+      <file leaf-file-name="Predictor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NeuralEngine/Predictor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/profile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="26" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new_app.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/new_app.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="93" column="54" selection-start-line="93" selection-start-column="54" selection-end-line="93" selection-end-column="54" />
-              <folding />
+            <state relative-caret-position="986">
+              <caret line="64" column="53" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -176,7 +167,6 @@
         <option value="$PROJECT_DIR$/german.py" />
         <option value="$PROJECT_DIR$/NeuralEngine/trainer.py" />
         <option value="$PROJECT_DIR$/NeuralEngine/Preprocessor.py" />
-        <option value="$PROJECT_DIR$/NeuralEngine/Trainer.py" />
         <option value="$PROJECT_DIR$/Contract/__init__.py" />
         <option value="$PROJECT_DIR$/sandbox.py" />
         <option value="$PROJECT_DIR$/Contract/P2PLending.sol" />
@@ -185,11 +175,12 @@
         <option value="$PROJECT_DIR$/P2PLoan/app.py" />
         <option value="$PROJECT_DIR$/templates/open_apps.html" />
         <option value="$PROJECT_DIR$/templates/new_app.html" />
-        <option value="$PROJECT_DIR$/NeuralEngine/Predictor.py" />
-        <option value="$PROJECT_DIR$/Contract/LendingInterface.py" />
         <option value="$PROJECT_DIR$/templates/appl_dashboard.html" />
         <option value="$PROJECT_DIR$/templates/repay_loan.html" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/NeuralEngine/Predictor.py" />
+        <option value="$PROJECT_DIR$/Contract/LendingInterface.py" />
+        <option value="$PROJECT_DIR$/NeuralEngine/Trainer.py" />
       </list>
     </option>
   </component>
@@ -224,7 +215,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -240,20 +230,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Loan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Loan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Loan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -288,6 +264,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -531,9 +508,9 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.LendingInterface" />
-        <item index="1" class="java.lang.String" itemvalue="Python.sandbox" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Predictor" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Trainer" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Trainer" />
+        <item index="2" class="java.lang.String" itemvalue="Python.sandbox" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Predictor" />
         <item index="4" class="java.lang.String" itemvalue="Python.german (1)" />
       </list>
     </recent_temporary>
@@ -555,7 +532,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15997024" sideWeight="0.8141809" order="0" side_tool="false" content_ui="combo" />
@@ -563,10 +540,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33169934" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15997024" sideWeight="0.5097561" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15997024" sideWeight="0.18581907" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33224222" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -575,10 +552,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33169934" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33224222" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15997024" sideWeight="0.5097561" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15997024" sideWeight="0.18581907" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15997024" sideWeight="0.18581907" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -600,37 +577,16 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/model2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/model2.py" />
     <entry file="file://$PROJECT_DIR$/keras_18_features.py" />
     <entry file="file://$PROJECT_DIR$/BigOne/temp.py" />
     <entry file="file://$PROJECT_DIR$/BigOne/first.py" />
     <entry file="file://$PROJECT_DIR$/simple_model.py" />
     <entry file="file://$PROJECT_DIR$/keras_18_features.py" />
     <entry file="file://$PROJECT_DIR$/BigOne/temp.py" />
-    <entry file="file://$PROJECT_DIR$/model2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/model2.py" />
     <entry file="file://$PROJECT_DIR$/simple_model.py" />
-    <entry file="file://$PROJECT_DIR$/model2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/model2.py" />
     <entry file="file://$PROJECT_DIR$/simple_model.py" />
     <entry file="file://$PROJECT_DIR$/Big One/first.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/pandas/io/parsers.py">
@@ -670,67 +626,16 @@
     <entry file="file://$PROJECT_DIR$/analytics.py" />
     <entry file="file://$PROJECT_DIR$/10_features_tf.py" />
     <entry file="file://$PROJECT_DIR$/18_features_try2.py" />
-    <entry file="file://$PROJECT_DIR$/model_comparison.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2720">
-          <caret line="164" column="33" selection-start-line="164" selection-start-column="33" selection-end-line="164" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/secondary_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2941">
-          <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/less_features.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3927">
-          <caret line="235" column="47" selection-start-line="235" selection-start-column="47" selection-end-line="235" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/german.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NeuralEngine/Preprocessor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/money_transfer_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1385">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/model_comparison.py" />
+    <entry file="file://$PROJECT_DIR$/secondary_model.py" />
+    <entry file="file://$PROJECT_DIR$/less_features.py" />
+    <entry file="file://$PROJECT_DIR$/model2.py" />
+    <entry file="file://$PROJECT_DIR$/german.py" />
+    <entry file="file://$PROJECT_DIR$/money_transfer_server.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/tensorflow/python/client/session.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
           <caret line="1328" column="25" selection-start-line="1328" selection-start-column="25" selection-end-line="1328" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -738,36 +643,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="1808" column="0" selection-start-line="1808" selection-start-column="0" selection-end-line="1808" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="221" column="20" selection-start-line="221" selection-start-column="20" selection-end-line="221" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NeuralEngine/Trainer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-962">
-          <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#339#345#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/main_model.py" />
     <entry file="file://$PROJECT_DIR$/NeuralEngine/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -775,9 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -785,50 +665,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/P2PLoan/P2PLending.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="253" column="1" selection-start-line="253" selection-start-column="1" selection-end-line="253" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Contract/P2PLending.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P2PLoan/templates/new_app.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="202" column="33" selection-start-line="202" selection-start-column="33" selection-end-line="202" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P2PLoan/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/P2PLoan/P2PLending.sol" />
+    <entry file="file://$PROJECT_DIR$/P2PLoan/templates/new_app.html" />
+    <entry file="file://$PROJECT_DIR$/P2PLoan/app.py" />
     <entry file="file://$PROJECT_DIR$/templates/open_apps.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -836,40 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
           <caret line="93" column="54" selection-start-line="93" selection-start-column="54" selection-end-line="93" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NeuralEngine/Predictor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="81" column="9" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Contract/LendingInterface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="285" column="54" selection-start-line="285" selection-start-column="30" selection-end-line="285" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#3045#4060#0" expanded="false" />
-            <element signature="e#4103#4624#0" expanded="false" />
-            <element signature="e#4981#5074#0" expanded="false" />
-            <element signature="e#5102#5188#0" expanded="false" />
-            <element signature="e#5225#5859#0" expanded="false" />
-            <element signature="e#5896#6775#0" expanded="false" />
-            <element signature="e#6823#6970#0" expanded="false" />
-            <element signature="e#7022#9024#0" expanded="false" />
-            <element signature="e#9081#10489#0" expanded="false" />
-            <element signature="e#11860#12051#0" expanded="false" />
-            <element signature="e#12109#12799#0" expanded="false" />
-            <marker date="1520806299928" expanded="false" signature="10946:11148" placeholder="..." />
-            <marker date="1520806299928" expanded="false" signature="11178:11826" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -877,15 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
           <caret line="26" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/appl_dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -893,14 +696,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/appl_dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeuralEngine/Preprocessor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contract/P2PLending.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="632" column="47" selection-start-line="632" selection-start-column="47" selection-end-line="632" selection-end-column="47" />
+        <state relative-caret-position="1802">
+          <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
             <element signature="e#2303#2896#0" expanded="false" />
@@ -927,8 +751,52 @@
             <element signature="e#17224#18150#0" expanded="false" />
             <element signature="e#18249#18430#0" expanded="false" />
             <element signature="e#18503#18915#0" expanded="false" />
+            <element signature="e#19015#25182#0" expanded="false" />
             <element signature="e#25283#26212#0" expanded="false" />
-            <marker date="1520807276798" expanded="false" signature="19010:25182" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contract/LendingInterface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2822">
+          <caret line="370" column="1" selection-start-line="370" selection-start-column="1" selection-end-line="370" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#3045#4060#0" expanded="false" />
+            <element signature="e#4103#4624#0" expanded="false" />
+            <element signature="e#4981#5074#0" expanded="false" />
+            <element signature="e#5102#5188#0" expanded="false" />
+            <element signature="e#5225#5859#0" expanded="false" />
+            <element signature="e#5896#6775#0" expanded="false" />
+            <element signature="e#6823#6970#0" expanded="false" />
+            <element signature="e#7022#9024#0" expanded="false" />
+            <element signature="e#9081#10489#0" expanded="false" />
+            <element signature="e#10951#11148#0" expanded="false" />
+            <element signature="e#11183#11826#0" expanded="false" />
+            <element signature="e#11860#12051#0" expanded="false" />
+            <element signature="e#12109#12799#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeuralEngine/Predictor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="64" column="53" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeuralEngine/Trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#401#407#0" expanded="false" />
           </folding>
         </state>
       </provider>

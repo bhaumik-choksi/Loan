@@ -4,15 +4,17 @@ from keras.utils import to_categorical
 from sklearn.preprocessing import LabelEncoder, Normalizer
 from keras.layers import Dense, BatchNormalization
 from keras.models import Sequential
+from keras.callbacks import TensorBoard
 from sklearn.model_selection import train_test_split
 import pickle
+from time import time
 
 class Trainer:
     def __init__(self):
         return
 
     def train_all_and_save(self, filename, epochs=20, batch_size=5):
-        raw_data = pd.read_excel('../'+filename)
+        raw_data = pd.read_excel('../' + filename)
         # Extract status into a separate DF. Delete from main DF.
         raw_output_status = raw_data['status'].apply(lambda x: 0 if x == 2 else x)
         del raw_data["status"]
@@ -27,6 +29,8 @@ class Trainer:
         normalizers = {}
         # TODO: Normalization does not work as expected. Fix it.
 
+        tb = TensorBoard(log_dir='logs', histogram_freq=0, batch_size=32, write_graph=True, write_grads=True,
+                         write_images=False)
 
         for attr in all_attributes:
             if attr not in numerical_attributes:
@@ -34,7 +38,7 @@ class Trainer:
                 numerical_col = le.fit_transform(raw_data[attr])
                 cat_col = to_categorical(numerical_col)
                 arr = np.hstack((arr, cat_col))
-                encoders[attr] = {"encoder":le, "n_classes":len(list(le.classes_))}
+                encoders[attr] = {"encoder": le, "n_classes": len(list(le.classes_))}
             else:
                 N = Normalizer()
                 temp = np.asarray(raw_data[attr].reshape(-1, 1))
@@ -56,7 +60,7 @@ class Trainer:
         model_1.add(Dense(500))
         model_1.add(Dense(2, activation="softmax"))
         model_1.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
-        model_1.fit(x_train, y_train, epochs=epochs, batch_size=batch_size)
+        model_1.fit(x_train, y_train, epochs=epochs, batch_size=batch_size, callbacks=[tb])
         scores = model_1.evaluate(np.array(x_test), np.array(y_test), verbose=0)
         print("TEST SCORE 1")
         print("%s: %.2f%%" % (model_1.metrics_names[1], scores[1] * 100))
