@@ -2,3 +2,5 @@
 *.xlsx
 *.xls
 .idea
+__pycache__
+logs

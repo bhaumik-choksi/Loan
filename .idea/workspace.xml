@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36e6ee87-3239-43a5-9eb8-32898565caa0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/encoder.p" afterPath="$PROJECT_DIR$/Models/encoder.p" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/model_1.h5" afterPath="$PROJECT_DIR$/Models/model_1.h5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/model_2.h5" afterPath="$PROJECT_DIR$/Models/model_2.h5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/model_3.h5" afterPath="$PROJECT_DIR$/Models/model_3.h5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/normalizer.p" afterPath="$PROJECT_DIR$/Models/normalizer.p" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Contract/LendingInterface.py" afterPath="$PROJECT_DIR$/Contract/LendingInterface.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NeuralEngine/Trainer.py" afterPath="$PROJECT_DIR$/NeuralEngine/Trainer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sandbox.py" afterPath="$PROJECT_DIR$/sandbox.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_neural.py" afterPath="$PROJECT_DIR$/test_neural.py" />
     </list>
     <ignored path="Loan.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,23 +28,10 @@
       <file leaf-file-name="LendingInterface.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Contract/LendingInterface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2822">
-              <caret line="370" column="1" selection-start-line="370" selection-start-column="1" selection-end-line="370" selection-end-column="1" />
+            <state relative-caret-position="4063">
+              <caret line="371" column="1" selection-start-line="371" selection-start-column="1" selection-end-line="371" selection-end-column="1" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#3045#4060#0" expanded="false" />
-                <element signature="e#4103#4624#0" expanded="false" />
-                <element signature="e#4981#5074#0" expanded="false" />
-                <element signature="e#5102#5188#0" expanded="false" />
-                <element signature="e#5225#5859#0" expanded="false" />
-                <element signature="e#5896#6775#0" expanded="false" />
-                <element signature="e#6823#6970#0" expanded="false" />
-                <element signature="e#7022#9024#0" expanded="false" />
-                <element signature="e#9081#10489#0" expanded="false" />
-                <element signature="e#10951#11148#0" expanded="false" />
-                <element signature="e#11183#11826#0" expanded="false" />
-                <element signature="e#11860#12051#0" expanded="false" />
-                <element signature="e#12109#12799#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -59,8 +40,8 @@
       <file leaf-file-name="P2PLending.sol" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Contract/P2PLending.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
+            <state relative-caret-position="527">
+              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -69,8 +50,8 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1802">
-              <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+            <state relative-caret-position="-26">
+              <caret line="573" column="28" selection-start-line="573" selection-start-column="28" selection-end-line="573" selection-end-column="28" />
               <folding>
                 <element signature="e#0#84#0" expanded="true" />
                 <element signature="e#2303#2896#0" expanded="false" />
@@ -97,7 +78,6 @@
                 <element signature="e#17224#18150#0" expanded="false" />
                 <element signature="e#18249#18430#0" expanded="false" />
                 <element signature="e#18503#18915#0" expanded="false" />
-                <element signature="e#19015#25182#0" expanded="false" />
                 <element signature="e#25283#26212#0" expanded="false" />
               </folding>
             </state>
@@ -107,8 +87,8 @@
       <file leaf-file-name="Trainer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NeuralEngine/Trainer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="459">
+              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
                 <element signature="e#401#407#0" expanded="false" />
@@ -120,7 +100,7 @@
       <file leaf-file-name="Predictor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NeuralEngine/Predictor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
+            <state relative-caret-position="550">
               <caret line="64" column="53" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -185,10 +165,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-7" />
+    <option name="y" value="2" />
+    <option name="width" value="1378" />
+    <option name="height" value="733" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -215,6 +195,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -263,8 +245,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -532,10 +512,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-7" y="2" width="1378" height="733" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15997024" sideWeight="0.8141809" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16044776" sideWeight="0.8141809" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -713,18 +693,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Contract/P2PLending.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1802">
-          <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+        <state relative-caret-position="-26">
+          <caret line="573" column="28" selection-start-line="573" selection-start-column="28" selection-end-line="573" selection-end-column="28" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
             <element signature="e#2303#2896#0" expanded="false" />
@@ -751,38 +723,32 @@
             <element signature="e#17224#18150#0" expanded="false" />
             <element signature="e#18249#18430#0" expanded="false" />
             <element signature="e#18503#18915#0" expanded="false" />
-            <element signature="e#19015#25182#0" expanded="false" />
             <element signature="e#25283#26212#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Contract/P2PLending.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Contract/LendingInterface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2822">
-          <caret line="370" column="1" selection-start-line="370" selection-start-column="1" selection-end-line="370" selection-end-column="1" />
+        <state relative-caret-position="4063">
+          <caret line="371" column="1" selection-start-line="371" selection-start-column="1" selection-end-line="371" selection-end-column="1" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#3045#4060#0" expanded="false" />
-            <element signature="e#4103#4624#0" expanded="false" />
-            <element signature="e#4981#5074#0" expanded="false" />
-            <element signature="e#5102#5188#0" expanded="false" />
-            <element signature="e#5225#5859#0" expanded="false" />
-            <element signature="e#5896#6775#0" expanded="false" />
-            <element signature="e#6823#6970#0" expanded="false" />
-            <element signature="e#7022#9024#0" expanded="false" />
-            <element signature="e#9081#10489#0" expanded="false" />
-            <element signature="e#10951#11148#0" expanded="false" />
-            <element signature="e#11183#11826#0" expanded="false" />
-            <element signature="e#11860#12051#0" expanded="false" />
-            <element signature="e#12109#12799#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NeuralEngine/Predictor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
+        <state relative-caret-position="550">
           <caret line="64" column="53" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -792,8 +758,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NeuralEngine/Trainer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="459">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <element signature="e#401#407#0" expanded="false" />

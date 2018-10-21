@@ -1,0 +1,12 @@
+pandas==0.20.3
+matplotlib==2.0.2
+numpy==1.14.2+mkl
+pytest==3.4.0
+Flask==0.12.2
+h5py==2.7.1
+Keras==2.1.5
+tensorflow_gpu==1.6.0
+web3==3.16.4
+py_solc==2.1.0
+scikit_learn==0.19.1
+tensorflow==1.8.0
